@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build dms solution",
+			"type": "shell",
+			"command": "MSBuild.exe",
+			"args": [
+				"${workspaceFolder}/dms.sln",
+				"/p:Configuration=Debug"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": [
+				"$msCompile"
+			]
+		}
+	]
+}
