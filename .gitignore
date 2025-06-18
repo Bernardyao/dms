@@ -1,0 +1,67 @@
+# DMS 宿舍管理系统 - Git忽略文件
+
+# 编译输出文件
+bin/
+obj/
+*.exe
+*.pdb
+*.dll
+*.cache
+*.manifest
+
+# Visual Studio 文件
+.vs/
+.vscode/
+*.user
+*.suo
+*.sln.docstates
+*.csproj.user
+
+# 临时文件和备份
+*.tmp
+*.temp
+*~
+*.bak
+*.swp
+
+# Form1 变体文件（开发过程文件）
+Form1.Clean.cs
+Form1.Modern.cs
+Form1.Simple.cs
+Form1.minimal.cs
+Form1.temp.cs
+Form1.new.cs
+Form1.utf8.cs
+Form1.*.cs
+!Form1.cs
+!Form1.Designer.cs
+
+# 历史和备份文件夹
+.history/
+backup/
+
+# 日志文件
+*.log
+logs/
+
+# 数据库临时文件
+*.ldf.tmp
+*.mdf.tmp
+
+# 备份数据文件
+*.cs.new
+DataAccess.cs.new
+
+# 其他开发工具文件
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Node.js (如果使用)
+node_modules/
+npm-debug.log*
+
+# 测试覆盖率
+TestResults/
+*.trx
+*.coverage
