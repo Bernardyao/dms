@@ -32,9 +32,11 @@
             this.main_top = new System.Windows.Forms.Label();
             this.close = new System.Windows.Forms.Label();
             this.small = new System.Windows.Forms.Label();
-            this.down = new System.Windows.Forms.Label();            this.menu_panel = new System.Windows.Forms.Panel();
+            this.down = new System.Windows.Forms.Label();
+            this.menu_panel = new System.Windows.Forms.Panel();
             this.high = new System.Windows.Forms.Button();
-            this.i_c = new System.Windows.Forms.Button();this.i_o = new System.Windows.Forms.Button();
+            this.about = new System.Windows.Forms.Button();
+            this.i_c = new System.Windows.Forms.Button();            this.i_o = new System.Windows.Forms.Button();
             this.s_m = new System.Windows.Forms.Button();
             this.d_m = new System.Windows.Forms.Button();
             this.dataGridView0 = new System.Windows.Forms.DataGridView();
@@ -1123,6 +1125,7 @@
         private System.Windows.Forms.TextBox admin_tel;
         private System.Windows.Forms.Button del_admin;        private System.Windows.Forms.Button select_admin;
         private System.Windows.Forms.Label n;
+        private System.Windows.Forms.Button about;
     }
 }
 

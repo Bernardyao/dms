@@ -196,8 +196,9 @@ namespace dms
                 if (s2 != "")
                     Int32.Parse(s2);
                 if (s3 != "")
-                    Int32.Parse(s3);            }
-            catch (Exception)
+                    Int32.Parse(s3);
+            }
+            catch (Exception a)
             {
                 MessageBox.Show("请输入数字房间号或者剩余床位！", "提示");
                 return;

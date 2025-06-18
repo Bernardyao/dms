@@ -10,10 +10,9 @@ using System.Windows.Forms;
 namespace dms
 {
     public class DataAccess
-    {
-        private void ShowError(string message, Exception ex)
+    {        private void ShowError(string message, Exception ex)
         {
-            MessageBox.Show($"{message}: {ex.Message}", "数据库错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(message + ": " + ex.Message, "数据库错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private DataTable ExecuteQuery(string sql, List<SqlParameter> parameters = null)

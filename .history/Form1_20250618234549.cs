@@ -9,33 +9,32 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace dms
-{    public partial class Form1 : Form
+{
+    public partial class Form1 : Form
+    {        private Point offset;//鼠标拖动的位移量
+        public static int power = 0;//登陆的权限
+        public static int admin_id = 0;//登陆的用户
+        public static string admin_name = "";//登陆的用户
+        private DataTable dat;//记录查询到的结果表
+        private dms.DataAccess dataAccess;    public Form1()
     {
-        private Point offset; // 鼠标拖动的位移量
-        public static int power = 0; // 登陆的权限
-        public static int admin_id = 0; // 登陆的用户
-        public static string admin_name = ""; // 登陆的用户
-        private DataTable dat; // 记录查询到的结果表
-        private dms.DataAccess dataAccess;
-        
-        public Form1()
-        {
-            InitializeComponent();
-            dataAccess = new dms.DataAccess();
-            
-            // 应用简洁现代化UI样式
-            ApplySimpleModernUI();
+        InitializeComponent();
+        dataAccess = new dms.DataAccess();
+          // 应用简洁现代化UI样式
+        ApplySimpleModernUI();
         }
-        
-        // 标题栏鼠标点下事件
+        /*
+         * 标题栏鼠标点下事件
+         */
         private void main_top_MouseDown(object sender, MouseEventArgs e)
         {
             if (MouseButtons.Left != e.Button) return;
             Point cur = this.PointToScreen(e.Location);
             offset = new Point(cur.X - this.Left, cur.Y - this.Top);
         }
-
-        // 标题栏鼠标移动事件
+        /*
+         * 标题栏鼠标移动事件
+         */
         private void main_top_MouseMove(object sender, MouseEventArgs e)
         {
             if (MouseButtons.Left != e.Button) return;
@@ -48,12 +47,18 @@ namespace dms
         private void small_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }        private void close_Click(object sender, EventArgs e)
+        }
+        /*
+         * 关闭按钮点击事件
+         */
+        private void close_Click(object sender, EventArgs e)
         {
             this.Close();
             this.Dispose();
         }
-
+        /*
+         * 注销按钮点击事件
+         */
         private void down_Click(object sender, EventArgs e)
         {
             this.Visible = false;
@@ -196,8 +201,9 @@ namespace dms
                 if (s2 != "")
                     Int32.Parse(s2);
                 if (s3 != "")
-                    Int32.Parse(s3);            }
-            catch (Exception)
+                    Int32.Parse(s3);
+            }
+            catch (Exception a)
             {
                 MessageBox.Show("请输入数字房间号或者剩余床位！", "提示");
                 return;
@@ -223,7 +229,8 @@ namespace dms
             }
             dat = ds != null ? ds.Tables[0] : null;
             dataGridView0.DataSource = dat;
-        }        /*
+        }
+        /*
          * 宿舍管理页面找空床位按钮点击事件
          */
         private void hasempty_Click(object sender, EventArgs e)
@@ -238,7 +245,7 @@ namespace dms
                 if (s3 != "")
                     Int32.Parse(s3);
             }
-            catch (Exception)
+            catch (Exception a)
             {
                 MessageBox.Show("请输入数字房间号或者剩余床位！", "提示");
                 return;
@@ -343,8 +350,9 @@ namespace dms
                 if (s6 != "")
                     Int32.Parse(s6);
                 if (s10 != "")
-                    Int32.Parse(s10);            }
-            catch (Exception)
+                    Int32.Parse(s10);
+            }
+            catch (Exception a)
             {
                 MessageBox.Show("请输入正确格式的数据！", "提示");
                 return;
@@ -410,8 +418,9 @@ namespace dms
                 if (s6 != "")
                     Int32.Parse(s6);
                 if (s10 != "")
-                    Int32.Parse(s10);            }
-            catch (Exception)
+                    Int32.Parse(s10);
+            }
+            catch (Exception a)
             {
                 MessageBox.Show("请输入正确格式的数据！", "提示");
                 return;
@@ -937,7 +946,8 @@ namespace dms
                     dt.Rows.InsertAt(dr, 0);
                 }
                 cb.DataSource = dt;
-            }            catch (Exception)
+            }
+            catch (Exception a)
             {
             }
         }
@@ -951,36 +961,5 @@ namespace dms
         {
 
         }
-
-        private void ApplySimpleModernUI()
-        {
-            // 设置现代化配色方案
-            this.BackColor = Color.FromArgb(240, 240, 240);
-            
-            // 设置按钮样式
-            foreach (Control control in this.Controls)
-            {
-                if (control is Button)
-                {
-                    Button btn = (Button)control;
-                    btn.FlatStyle = FlatStyle.Flat;
-                    btn.BackColor = Color.FromArgb(0, 120, 215);
-                    btn.ForeColor = Color.White;
-                    btn.FlatAppearance.BorderSize = 0;
-                }
-            }
-            
-            // 美化DataGridView
-            if (dataGridView0 != null)
-            {
-                dataGridView0.BackgroundColor = Color.White;
-                dataGridView0.BorderStyle = BorderStyle.None;
-                dataGridView0.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 120, 215);
-                dataGridView0.DefaultCellStyle.SelectionForeColor = Color.White;
-                dataGridView0.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(230, 230, 230);
-                dataGridView0.EnableHeadersVisualStyles = false;
-            }
-        }
-
     }
 }

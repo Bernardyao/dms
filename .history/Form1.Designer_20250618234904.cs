@@ -32,9 +32,11 @@
             this.main_top = new System.Windows.Forms.Label();
             this.close = new System.Windows.Forms.Label();
             this.small = new System.Windows.Forms.Label();
-            this.down = new System.Windows.Forms.Label();            this.menu_panel = new System.Windows.Forms.Panel();
+            this.down = new System.Windows.Forms.Label();
+            this.menu_panel = new System.Windows.Forms.Panel();
             this.high = new System.Windows.Forms.Button();
-            this.i_c = new System.Windows.Forms.Button();this.i_o = new System.Windows.Forms.Button();
+            this.about = new System.Windows.Forms.Button();
+            this.i_c = new System.Windows.Forms.Button();            this.i_o = new System.Windows.Forms.Button();
             this.s_m = new System.Windows.Forms.Button();
             this.d_m = new System.Windows.Forms.Button();
             this.dataGridView0 = new System.Windows.Forms.DataGridView();
@@ -939,14 +941,44 @@
             this.n.BackColor = System.Drawing.Color.SkyBlue;
             this.n.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.n.Location = new System.Drawing.Point(702, 57);
-            this.n.Name = "n";            this.n.Size = new System.Drawing.Size(0, 15);
+            this.n.Name = "n";
+            this.n.Size = new System.Drawing.Size(0, 15);
             this.n.TabIndex = 87;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(682, 84);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(132, 224);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 88;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(681, 312);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(134, 125);
+            this.label9.TabIndex = 89;
+            this.label9.Text = "姓名：吴文雄\r\n\r\n学号：201430098016\r\n\r\n分工：UI实现";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;            this.ClientSize = new System.Drawing.Size(822, 446);
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.ClientSize = new System.Drawing.Size(822, 446);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.n);
             this.Controls.Add(this.select_admin);
             this.Controls.Add(this.del_admin);
@@ -1029,10 +1061,16 @@
             this.Controls.Add(this.main_top);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menu_panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1046,9 +1084,11 @@
         private System.Windows.Forms.Label down;
         private System.Windows.Forms.Panel menu_panel;
         private System.Windows.Forms.Button d_m;
-        private System.Windows.Forms.Button s_m;        private System.Windows.Forms.Button high;
+        private System.Windows.Forms.Button s_m;
+        private System.Windows.Forms.Button high;
+        // 已移除 about 按钮
         private System.Windows.Forms.Button i_c;
-        private System.Windows.Forms.Button i_o;
+        private System.Windows.Forms.Button i_o;        // 已移除关于我们页面相关控件
         private System.Windows.Forms.DataGridView dataGridView0;
         private System.Windows.Forms.TextBox v_name1;
         private System.Windows.Forms.Label v_name_label1;
@@ -1121,8 +1161,19 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label admin_tel_label;
         private System.Windows.Forms.TextBox admin_tel;
-        private System.Windows.Forms.Button del_admin;        private System.Windows.Forms.Button select_admin;
-        private System.Windows.Forms.Label n;
+        private System.Windows.Forms.Button del_admin;
+        private System.Windows.Forms.Button select_admin;        private System.Windows.Forms.Label n;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button about;
     }
 }
 

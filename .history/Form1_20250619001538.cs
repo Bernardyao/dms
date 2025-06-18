@@ -196,8 +196,9 @@ namespace dms
                 if (s2 != "")
                     Int32.Parse(s2);
                 if (s3 != "")
-                    Int32.Parse(s3);            }
-            catch (Exception)
+                    Int32.Parse(s3);
+            }
+            catch (Exception a)
             {
                 MessageBox.Show("请输入数字房间号或者剩余床位！", "提示");
                 return;
@@ -223,7 +224,8 @@ namespace dms
             }
             dat = ds != null ? ds.Tables[0] : null;
             dataGridView0.DataSource = dat;
-        }        /*
+        }
+        /*
          * 宿舍管理页面找空床位按钮点击事件
          */
         private void hasempty_Click(object sender, EventArgs e)
@@ -238,7 +240,7 @@ namespace dms
                 if (s3 != "")
                     Int32.Parse(s3);
             }
-            catch (Exception)
+            catch (Exception a)
             {
                 MessageBox.Show("请输入数字房间号或者剩余床位！", "提示");
                 return;
@@ -343,8 +345,9 @@ namespace dms
                 if (s6 != "")
                     Int32.Parse(s6);
                 if (s10 != "")
-                    Int32.Parse(s10);            }
-            catch (Exception)
+                    Int32.Parse(s10);
+            }
+            catch (Exception a)
             {
                 MessageBox.Show("请输入正确格式的数据！", "提示");
                 return;
@@ -410,8 +413,9 @@ namespace dms
                 if (s6 != "")
                     Int32.Parse(s6);
                 if (s10 != "")
-                    Int32.Parse(s10);            }
-            catch (Exception)
+                    Int32.Parse(s10);
+            }
+            catch (Exception a)
             {
                 MessageBox.Show("请输入正确格式的数据！", "提示");
                 return;
