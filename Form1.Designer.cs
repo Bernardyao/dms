@@ -112,13 +112,12 @@
             this.del_admin = new System.Windows.Forms.Button();            this.select_admin = new System.Windows.Forms.Button();
             this.n = new System.Windows.Forms.Label();
             this.menu_panel.SuspendLayout();            ((System.ComponentModel.ISupportInitialize)(this.dataGridView0)).BeginInit();
-            this.SuspendLayout();
-            // 
+            this.SuspendLayout();            // 
             // main_top
             // 
-            this.main_top.BackColor = System.Drawing.Color.SkyBlue;
-            this.main_top.Font = new System.Drawing.Font("宋体", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.main_top.ForeColor = System.Drawing.Color.AliceBlue;
+            this.main_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.main_top.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.main_top.ForeColor = System.Drawing.Color.White;
             this.main_top.Location = new System.Drawing.Point(0, 0);
             this.main_top.Name = "main_top";
             this.main_top.Size = new System.Drawing.Size(821, 75);
@@ -126,50 +125,47 @@
             this.main_top.Text = " 学生宿舍管理系统";
             this.main_top.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.main_top.MouseDown += new System.Windows.Forms.MouseEventHandler(this.main_top_MouseDown);
-            this.main_top.MouseMove += new System.Windows.Forms.MouseEventHandler(this.main_top_MouseMove);
-            // 
+            this.main_top.MouseMove += new System.Windows.Forms.MouseEventHandler(this.main_top_MouseMove);            // 
             // close
             // 
-            this.close.BackColor = System.Drawing.Color.SkyBlue;
-            this.close.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.close.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.close.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.close.ForeColor = System.Drawing.Color.White;
             this.close.Location = new System.Drawing.Point(770, 1);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(51, 25);
             this.close.TabIndex = 1;
             this.close.Text = "×";
             this.close.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.close.Click += new System.EventHandler(this.close_Click);
-            // 
+            this.close.Click += new System.EventHandler(this.close_Click);            // 
             // small
             // 
-            this.small.BackColor = System.Drawing.Color.SkyBlue;
-            this.small.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.small.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.small.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.small.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.small.ForeColor = System.Drawing.Color.White;
             this.small.Location = new System.Drawing.Point(723, 1);
             this.small.Name = "small";
             this.small.Size = new System.Drawing.Size(51, 25);
             this.small.TabIndex = 2;
-            this.small.Text = " ";
+            this.small.Text = "━";
             this.small.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.small.Click += new System.EventHandler(this.small_Click);
-            // 
+            this.small.Click += new System.EventHandler(this.small_Click);// 
             // down
             // 
-            this.down.BackColor = System.Drawing.Color.SkyBlue;
-            this.down.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.down.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.down.ForeColor = System.Drawing.Color.White;
             this.down.Location = new System.Drawing.Point(664, 1);
             this.down.Name = "down";
             this.down.Size = new System.Drawing.Size(63, 25);
             this.down.TabIndex = 4;
             this.down.Text = "注销";
             this.down.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.down.Click += new System.EventHandler(this.down_Click);
-            // 
+            this.down.Click += new System.EventHandler(this.down_Click);            // 
             // menu_panel
             // 
-            this.menu_panel.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.menu_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.menu_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.menu_panel.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.menu_panel.Controls.Add(this.high);
             // 已移除关于我们按钮
             this.menu_panel.Controls.Add(this.i_c);
@@ -179,15 +175,16 @@
             this.menu_panel.Location = new System.Drawing.Point(0, 75);
             this.menu_panel.Name = "menu_panel";
             this.menu_panel.Size = new System.Drawing.Size(137, 371);
-            this.menu_panel.TabIndex = 5;
-            // 
+            this.menu_panel.TabIndex = 5;            // 
             // high
             // 
-            this.high.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.high.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(202)))), ((int)(((byte)(249)))));
             this.high.FlatAppearance.BorderSize = 0;
-            this.high.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.high.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.high.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.high.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(84)))), ((int)(((byte)(153)))));
+            this.high.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
+            this.high.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.high.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.high.ForeColor = System.Drawing.Color.White;
             this.high.Location = new System.Drawing.Point(-2, 172);
             this.high.Name = "high";
             this.high.Size = new System.Drawing.Size(137, 44);
@@ -196,65 +193,70 @@
             this.high.UseVisualStyleBackColor = false;
             this.high.Visible = false;
             this.high.Click += new System.EventHandler(this.high_Click);
-            //            // 已移除关于我们按钮
-            // 
+            //            // 已移除关于我们按钮            // 
             // i_c
             // 
-            this.i_c.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.i_c.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(181)))), ((int)(((byte)(246)))));
             this.i_c.FlatAppearance.BorderSize = 0;
-            this.i_c.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.i_c.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.i_c.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.i_c.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(84)))), ((int)(((byte)(153)))));
+            this.i_c.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(202)))), ((int)(((byte)(249)))));
+            this.i_c.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.i_c.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.i_c.ForeColor = System.Drawing.Color.White;
             this.i_c.Location = new System.Drawing.Point(-2, 129);
             this.i_c.Name = "i_c";
             this.i_c.Size = new System.Drawing.Size(137, 44);
             this.i_c.TabIndex = 10;
             this.i_c.Text = "来访登记";
             this.i_c.UseVisualStyleBackColor = false;
-            this.i_c.Click += new System.EventHandler(this.i_c_Click);
-            // 
+            this.i_c.Click += new System.EventHandler(this.i_c_Click);// 
             // i_o
             // 
-            this.i_o.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.i_o.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.i_o.FlatAppearance.BorderSize = 0;
-            this.i_o.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.i_o.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.i_o.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.i_o.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(84)))), ((int)(((byte)(153)))));
+            this.i_o.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(181)))), ((int)(((byte)(246)))));
+            this.i_o.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.i_o.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.i_o.ForeColor = System.Drawing.Color.White;
             this.i_o.Location = new System.Drawing.Point(-2, 85);
             this.i_o.Name = "i_o";
             this.i_o.Size = new System.Drawing.Size(137, 44);
             this.i_o.TabIndex = 9;
             this.i_o.Text = "出入登记";
             this.i_o.UseVisualStyleBackColor = false;
-            this.i_o.Click += new System.EventHandler(this.i_o_Click);
-            // 
+            this.i_o.Click += new System.EventHandler(this.i_o_Click);// 
             // s_m
             // 
-            this.s_m.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.s_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(135)))), ((int)(((byte)(221)))));
             this.s_m.FlatAppearance.BorderSize = 0;
-            this.s_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.s_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.s_m.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.s_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(84)))), ((int)(((byte)(153)))));
+            this.s_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.s_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.s_m.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.s_m.ForeColor = System.Drawing.Color.White;
             this.s_m.Location = new System.Drawing.Point(-2, 42);
             this.s_m.Name = "s_m";
             this.s_m.Size = new System.Drawing.Size(137, 44);
             this.s_m.TabIndex = 8;
             this.s_m.Text = "学生管理";
             this.s_m.UseVisualStyleBackColor = false;
-            this.s_m.Click += new System.EventHandler(this.s_m_Click);
-            // 
+            this.s_m.Click += new System.EventHandler(this.s_m_Click);// 
             // d_m
             // 
-            this.d_m.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.d_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.d_m.FlatAppearance.BorderSize = 0;
-            this.d_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.d_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.d_m.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.d_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(84)))), ((int)(((byte)(153)))));
+            this.d_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(135)))), ((int)(((byte)(221)))));
+            this.d_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d_m.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.d_m.ForeColor = System.Drawing.Color.White;
             this.d_m.Location = new System.Drawing.Point(-2, -1);
             this.d_m.Name = "d_m";
             this.d_m.Size = new System.Drawing.Size(137, 44);
             this.d_m.TabIndex = 7;
-            this.d_m.Text = "宿舍管理";            this.d_m.UseVisualStyleBackColor = false;
+            this.d_m.Text = "宿舍管理";
+            this.d_m.UseVisualStyleBackColor = false;
             this.d_m.Click += new System.EventHandler(this.d_m_Click);
             // 
             // dataGridView0
@@ -931,22 +933,23 @@
             this.select_admin.TabIndex = 86;
             this.select_admin.Text = "查询管理员";
             this.select_admin.UseVisualStyleBackColor = true;
-            this.select_admin.Click += new System.EventHandler(this.select_admin_Click);
-            // 
+            this.select_admin.Click += new System.EventHandler(this.select_admin_Click);            // 
             // n
             // 
-            this.n.AutoSize = true;
-            this.n.BackColor = System.Drawing.Color.SkyBlue;
-            this.n.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.n.Location = new System.Drawing.Point(702, 57);
-            this.n.Name = "n";            this.n.Size = new System.Drawing.Size(0, 15);
+            this.n.AutoSize = true;            this.n.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.n.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.n.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.n.Location = new System.Drawing.Point(1200, 85);
+            this.n.Name = "n";
+            this.n.Padding = new System.Windows.Forms.Padding(12, 6, 12, 6);
+            this.n.Size = new System.Drawing.Size(16, 25);
             this.n.TabIndex = 87;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;            this.ClientSize = new System.Drawing.Size(822, 446);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(822, 446);
             this.Controls.Add(this.n);
             this.Controls.Add(this.select_admin);
             this.Controls.Add(this.del_admin);

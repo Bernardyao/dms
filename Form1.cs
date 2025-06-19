@@ -56,27 +56,25 @@ namespace dms
 
         private void down_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            Login l = new Login();
+            this.Visible = false;            Login l = new Login();
             l.ShowDialog();
             if (l.DialogResult == DialogResult.OK)
             {
                 high.Visible = (power == 2);
                 this.Visible = true;
-            }
-            n.Text = admin_name;
+            }            // 设置更优雅的欢迎信息
+            n.Text = "👤 " + admin_name;
             SetActivePanel(d_m);
         }        private void SetActivePanel(Control activeControl, bool showDataGrid = true)
-        {
-            var buttons = new[] { d_m, s_m, i_o, i_c, high };
+        {            var buttons = new[] { d_m, s_m, i_o, i_c, high };
             foreach (var btn in buttons)
             {
-                btn.BackColor = System.Drawing.Color.PaleGoldenrod;
+                btn.BackColor = Color.FromArgb(0, 120, 215); // 统一蓝色
             }
 
             if (activeControl != null)
             {
-                activeControl.BackColor = System.Drawing.Color.DeepSkyBlue;
+                activeControl.BackColor = Color.FromArgb(16, 110, 190); // 选中状态深蓝色
             }
 
             D_m(activeControl == d_m);
@@ -900,17 +898,11 @@ namespace dms
             DataSet ds = ConnectDB.getInstance().GetData("select id, aname 名字,tel 联系方式,power 权限 from admin");
             dat = ds != null ? ds.Tables[0] : null;
             dataGridView0.DataSource = dat;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
+        }        private void Form1_Load(object sender, EventArgs e)
         {
-            n.Text = admin_name;
+            n.Text = "👤 " + admin_name;
             if (power == 2)
-                high.Visible = true;            d_m.BackColor = System.Drawing.Color.DeepSkyBlue;
-            s_m.BackColor = System.Drawing.Color.PaleGoldenrod;
-            i_o.BackColor = System.Drawing.Color.PaleGoldenrod;
-            i_c.BackColor = System.Drawing.Color.PaleGoldenrod;
-            high.BackColor = System.Drawing.Color.PaleGoldenrod;
+                high.Visible = true;
 
             D_m(true);
             S_m(false);
@@ -950,25 +942,23 @@ namespace dms
         private void s_name_label1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void ApplySimpleModernUI()
+        }        private void ApplySimpleModernUI()
         {
             // 设置现代化配色方案
-            this.BackColor = Color.FromArgb(240, 240, 240);
+            this.BackColor = Color.White;
+              // 强制设置左侧按钮颜色为统一蓝色
+            d_m.BackColor = Color.FromArgb(0, 120, 215);        // 宿舍管理 - 微软蓝
+            s_m.BackColor = Color.FromArgb(0, 120, 215);        // 学生管理 - 微软蓝
+            i_o.BackColor = Color.FromArgb(0, 120, 215);        // 出入登记 - 微软蓝
+            i_c.BackColor = Color.FromArgb(0, 120, 215);        // 来访登记 - 微软蓝
+            high.BackColor = Color.FromArgb(0, 120, 215);       // 高级管理 - 微软蓝
             
-            // 设置按钮样式
-            foreach (Control control in this.Controls)
-            {
-                if (control is Button)
-                {
-                    Button btn = (Button)control;
-                    btn.FlatStyle = FlatStyle.Flat;
-                    btn.BackColor = Color.FromArgb(0, 120, 215);
-                    btn.ForeColor = Color.White;
-                    btn.FlatAppearance.BorderSize = 0;
-                }
-            }
+            // 设置按钮文字颜色
+            d_m.ForeColor = Color.White;
+            s_m.ForeColor = Color.White;
+            i_o.ForeColor = Color.White;
+            i_c.ForeColor = Color.White;
+            high.ForeColor = Color.White;
             
             // 美化DataGridView
             if (dataGridView0 != null)
@@ -980,7 +970,26 @@ namespace dms
                 dataGridView0.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(230, 230, 230);
                 dataGridView0.EnableHeadersVisualStyles = false;
             }
+            
+            // 添加悬停效果
+            AddHoverEffects();
         }
-
+          /*
+         * 添加悬停效果
+         */
+        private void AddHoverEffects()
+        {
+            // 关闭按钮悬停效果
+            close.MouseEnter += (s, e) => close.BackColor = Color.FromArgb(232, 17, 35);
+            close.MouseLeave += (s, e) => close.BackColor = Color.FromArgb(0, 120, 215);
+            
+            // 最小化按钮悬停效果
+            small.MouseEnter += (s, e) => small.BackColor = Color.FromArgb(23, 135, 221);
+            small.MouseLeave += (s, e) => small.BackColor = Color.FromArgb(0, 120, 215);
+            
+            // 注销按钮悬停效果
+            down.MouseEnter += (s, e) => down.BackColor = Color.FromArgb(23, 135, 221);
+            down.MouseLeave += (s, e) => down.BackColor = Color.FromArgb(0, 120, 215);
+        }
     }
 }

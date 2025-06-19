@@ -39,13 +39,12 @@
             this.login_bt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.user_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.password_pic)).BeginInit();
-            this.SuspendLayout();
-            // 
+            this.SuspendLayout();            // 
             // login_top
             // 
-            this.login_top.BackColor = System.Drawing.Color.SkyBlue;
-            this.login_top.Font = new System.Drawing.Font("宋体", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.login_top.ForeColor = System.Drawing.Color.DarkGreen;
+            this.login_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.login_top.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.login_top.ForeColor = System.Drawing.Color.White;
             this.login_top.Location = new System.Drawing.Point(-1, 0);
             this.login_top.Name = "login_top";
             this.login_top.Size = new System.Drawing.Size(545, 119);
@@ -53,13 +52,12 @@
             this.login_top.Text = "宿舍管理系统";
             this.login_top.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.login_top.MouseDown += new System.Windows.Forms.MouseEventHandler(this.login_top_MouseDown);
-            this.login_top.MouseMove += new System.Windows.Forms.MouseEventHandler(this.login_top_MouseMove);
-            // 
+            this.login_top.MouseMove += new System.Windows.Forms.MouseEventHandler(this.login_top_MouseMove);            // 
             // close
             // 
-            this.close.BackColor = System.Drawing.Color.SkyBlue;
-            this.close.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.close.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.close.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.close.ForeColor = System.Drawing.Color.White;
             this.close.Location = new System.Drawing.Point(513, 0);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(31, 26);
@@ -67,26 +65,23 @@
             this.close.Text = "×";
             this.close.Click += new System.EventHandler(this.close_Click);
             this.close.MouseEnter += new System.EventHandler(this.close_MouseEnter);
-            this.close.MouseLeave += new System.EventHandler(this.close_MouseLeave);
-            // 
+            this.close.MouseLeave += new System.EventHandler(this.close_MouseLeave);            // 
             // small
             // 
-            this.small.BackColor = System.Drawing.Color.SkyBlue;
-            this.small.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.small.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.small.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.small.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.small.ForeColor = System.Drawing.Color.White;
             this.small.Location = new System.Drawing.Point(488, 0);
             this.small.Name = "small";
             this.small.Size = new System.Drawing.Size(28, 26);
             this.small.TabIndex = 2;
-            this.small.Text = "▁";
+            this.small.Text = "─";
             this.small.Click += new System.EventHandler(this.small_Click);
-            this.small.MouseEnter += new System.EventHandler(this.small_MouseEnter);
-            this.small.MouseLeave += new System.EventHandler(this.small_MouseLeave);
-            // 
+            this.small.MouseEnter += new System.EventHandler(this.small_MouseEnter);            this.small.MouseLeave += new System.EventHandler(this.small_MouseLeave);            // 
             // user_pic
             // 
-            this.user_pic.BackColor = System.Drawing.Color.SkyBlue;
-            this.user_pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.user_pic.BackColor = System.Drawing.Color.White;
+            this.user_pic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.user_pic.Image = ((System.Drawing.Image)(resources.GetObject("user_pic.Image")));
             this.user_pic.Location = new System.Drawing.Point(154, 142);
             this.user_pic.Name = "user_pic";
@@ -97,60 +92,60 @@
             // 
             // password_pic
             // 
-            this.password_pic.BackColor = System.Drawing.Color.SkyBlue;
+            this.password_pic.BackColor = System.Drawing.Color.White;
+            this.password_pic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.password_pic.Image = ((System.Drawing.Image)(resources.GetObject("password_pic.Image")));
             this.password_pic.Location = new System.Drawing.Point(154, 194);
             this.password_pic.Name = "password_pic";
-            this.password_pic.Size = new System.Drawing.Size(44, 31);
+            this.password_pic.Size = new System.Drawing.Size(43, 31);
             this.password_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.password_pic.TabIndex = 4;
             this.password_pic.TabStop = false;
-            // 
             // user
             // 
             this.user.AccessibleName = "";
-            this.user.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.user.Font = new System.Drawing.Font("宋体", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.user.BackColor = System.Drawing.Color.White;
+            this.user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.user.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.user.Location = new System.Drawing.Point(197, 142);
-            this.user.MaxLength = 10;
+            this.user.MaxLength = 20;
             this.user.Name = "user";
-            this.user.Size = new System.Drawing.Size(194, 31);
-            this.user.TabIndex = 5;
-            // 
+            this.user.Size = new System.Drawing.Size(194, 25);
+            this.user.TabIndex = 5;            // 
             // password
             // 
-            this.password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.password.Font = new System.Drawing.Font("宋体", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.password.BackColor = System.Drawing.Color.White;
+            this.password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.password.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.password.Location = new System.Drawing.Point(197, 194);
-            this.password.MaxLength = 10;
+            this.password.MaxLength = 20;
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(194, 31);
+            this.password.Size = new System.Drawing.Size(194, 25);
             this.password.TabIndex = 6;
-            this.password.UseSystemPasswordChar = true;
-            // 
+            this.password.UseSystemPasswordChar = true;            // 
             // login_bt
             // 
-            this.login_bt.BackColor = System.Drawing.Color.SkyBlue;
-            this.login_bt.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.login_bt.FlatAppearance.BorderSize = 0;
-            this.login_bt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
-            this.login_bt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.login_bt.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.login_bt.ForeColor = System.Drawing.Color.Snow;
+            this.login_bt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.login_bt.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.login_bt.FlatAppearance.BorderSize = 1;
+            this.login_bt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(84)))), ((int)(((byte)(153)))));
+            this.login_bt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(135)))), ((int)(((byte)(221)))));
+            this.login_bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.login_bt.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.login_bt.ForeColor = System.Drawing.Color.White;
             this.login_bt.Location = new System.Drawing.Point(154, 243);
             this.login_bt.Margin = new System.Windows.Forms.Padding(0);
             this.login_bt.Name = "login_bt";
-            this.login_bt.Size = new System.Drawing.Size(237, 34);
+            this.login_bt.Size = new System.Drawing.Size(237, 38);
             this.login_bt.TabIndex = 7;
-            this.login_bt.Text = "登陆";
+            this.login_bt.Text = "登录";
             this.login_bt.UseVisualStyleBackColor = false;
-            this.login_bt.Click += new System.EventHandler(this.login_bt_Click);
-            // 
+            this.login_bt.Click += new System.EventHandler(this.login_bt_Click);            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(544, 315);
             this.Controls.Add(this.login_bt);
             this.Controls.Add(this.password);
@@ -167,14 +162,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.user_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.password_pic)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
-
-        }
-
-        private void login_top_MouseDown(object sender, System.EventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
+            this.PerformLayout();        }
 
         #endregion
 
