@@ -17,6 +17,9 @@ namespace dms
         public Login()
         {
             InitializeComponent();
+            // 为用户名和密码输入框添加回车键事件处理
+            user.KeyDown += TextBox_KeyDown;
+            password.KeyDown += TextBox_KeyDown;
         }
         /*
          * 标题栏鼠标点下事件
@@ -81,6 +84,18 @@ namespace dms
         {
             close.BackColor = System.Drawing.Color.SkyBlue;
         }
+        /*
+         * 输入框回车键事件处理
+         */
+        private void TextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                // 按下回车键时执行登录
+                login_bt_Click(sender, e);
+            }
+        }
+
         /*
          * 登陆按钮点击事件
          */
